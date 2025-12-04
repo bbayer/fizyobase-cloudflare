@@ -15,6 +15,7 @@ import {
 	Clock,
 	Instagram,
 	MessageCircle,
+	CheckCircle2,
 } from "lucide-react";
 import "./App.css";
 
@@ -113,6 +114,9 @@ function App() {
 							<a href="#anasayfa" className="text-gray-700 hover:text-teal-600 font-medium transition-colors">
 								Anasayfa
 							</a>
+							<a href="#xbody" className="text-orange-500 hover:text-orange-600 font-medium transition-colors">
+								XBODY EMS
+							</a>
 							<a href="#hizmetler" className="text-gray-700 hover:text-teal-600 font-medium transition-colors">
 								Hizmetlerimiz
 							</a>
@@ -147,6 +151,9 @@ function App() {
 							<div className="flex flex-col gap-4">
 								<a href="#anasayfa" className="text-gray-700 hover:text-teal-600 font-medium" onClick={() => setMobileMenuOpen(false)}>
 									Anasayfa
+								</a>
+								<a href="#xbody" className="text-orange-500 hover:text-orange-600 font-medium" onClick={() => setMobileMenuOpen(false)}>
+									XBODY EMS
 								</a>
 								<a href="#hizmetler" className="text-gray-700 hover:text-teal-600 font-medium" onClick={() => setMobileMenuOpen(false)}>
 									Hizmetlerimiz
@@ -197,6 +204,82 @@ function App() {
 								<MessageCircle size={20} />
 								WhatsApp
 							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			{/* XBODY EMS Section */}
+			<section id="xbody" className="py-16 md:py-24 bg-white">
+				<div className="max-w-7xl mx-auto px-4">
+					<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+						{/* Content */}
+						<div>
+							<div className="inline-flex items-center gap-2 bg-orange-100 text-orange-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+								<Zap size={16} />
+								Yeni Nesil Teknoloji
+							</div>
+							<h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+								XBODY EMS ile <span className="text-orange-500">Medikal Egzersiz</span>
+							</h2>
+							<p className="text-gray-600 text-lg mb-6 leading-relaxed">
+								XBODY EMS (Elektrik Kas Stimülasyonu), düşük frekanslı elektrik akımları kullanarak kasları aktive eden ve güçlendiren yenilikçi bir egzersiz teknolojisidir. Sadece 20 dakikalık bir seans, 2 saatlik geleneksel antrenmanın etkisini sağlar.
+							</p>
+							<ul className="space-y-4 mb-8">
+								<li className="flex items-start gap-3">
+									<CheckCircle2 className="w-6 h-6 text-orange-500 flex-shrink-0 mt-0.5" />
+									<span className="text-gray-700">Kas güçlendirme ve şekillendirme</span>
+								</li>
+								<li className="flex items-start gap-3">
+									<CheckCircle2 className="w-6 h-6 text-orange-500 flex-shrink-0 mt-0.5" />
+									<span className="text-gray-700">Rehabilitasyon ve sakatlık sonrası iyileşme</span>
+								</li>
+								<li className="flex items-start gap-3">
+									<CheckCircle2 className="w-6 h-6 text-orange-500 flex-shrink-0 mt-0.5" />
+									<span className="text-gray-700">Bel ve sırt ağrılarının giderilmesi</span>
+								</li>
+								<li className="flex items-start gap-3">
+									<CheckCircle2 className="w-6 h-6 text-orange-500 flex-shrink-0 mt-0.5" />
+									<span className="text-gray-700">Duruş bozukluklarının düzeltilmesi</span>
+								</li>
+								<li className="flex items-start gap-3">
+									<CheckCircle2 className="w-6 h-6 text-orange-500 flex-shrink-0 mt-0.5" />
+									<span className="text-gray-700">Metabolizma hızlandırma ve yağ yakımı</span>
+								</li>
+							</ul>
+							<a
+								href={PHONE_LINK}
+								className="inline-flex items-center gap-2 bg-orange-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-orange-600 transition-colors shadow-lg"
+							>
+								<Phone size={20} />
+								Ücretsiz Deneme Randevusu
+							</a>
+						</div>
+
+						{/* Visual */}
+						<div className="relative">
+							<div className="bg-gradient-to-br from-orange-400 to-orange-600 rounded-3xl p-8 md:p-12 text-white">
+								<div className="text-center">
+									<div className="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
+										<Zap className="w-12 h-12 text-white" />
+									</div>
+									<h3 className="text-2xl md:text-3xl font-bold mb-4">XBODY EMS</h3>
+									<p className="text-orange-100 mb-6">Elektrik Kas Stimülasyonu</p>
+									<div className="grid grid-cols-2 gap-4 text-center">
+										<div className="bg-white/10 rounded-xl p-4">
+											<div className="text-3xl font-bold">20</div>
+											<div className="text-sm text-orange-100">Dakika Seans</div>
+										</div>
+										<div className="bg-white/10 rounded-xl p-4">
+											<div className="text-3xl font-bold">2x</div>
+											<div className="text-sm text-orange-100">Daha Etkili</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							{/* Decorative elements */}
+							<div className="absolute -top-4 -right-4 w-24 h-24 bg-orange-200 rounded-full opacity-50 -z-10"></div>
+							<div className="absolute -bottom-4 -left-4 w-32 h-32 bg-teal-200 rounded-full opacity-50 -z-10"></div>
 						</div>
 					</div>
 				</div>
